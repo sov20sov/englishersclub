@@ -20,7 +20,7 @@ const TikTokIcon = ({ size = 24 }: { size?: number }) => (
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-brand-navy text-slate-300 py-24 border-t-8 border-brand-coral relative overflow-hidden">
+    <footer className="bg-brand-navy text-slate-300 pt-16 pb-10 border-t-8 border-brand-coral relative overflow-hidden">
       {/* Decorative background circle */}
       <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-brand-coral opacity-5 rounded-full blur-3xl"></div>
       
@@ -97,9 +97,8 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-black mb-8 text-xl border-b-2 border-brand-coral/30 pb-2 inline-block italic">الدعم والمساعدة</h3>
             <ul className="space-y-4 text-sm font-bold">
               <li><Link to="/contact" className="hover:text-brand-coral transition-colors">اتصل بنا</Link></li>
-              <li><a href="#" className="hover:text-brand-coral transition-colors">الأسئلة الشائعة</a></li>
-              <li><a href="#" className="hover:text-brand-coral transition-colors">سياسة الخصوصية</a></li>
-              <li><a href="#" className="hover:text-brand-coral transition-colors">شروط الخدمة</a></li>
+              <li><Link to="/privacy" className="hover:text-brand-coral transition-colors">سياسة الخصوصية</Link></li>
+              <li><Link to="/terms" className="hover:text-brand-coral transition-colors">شروط الخدمة</Link></li>
             </ul>
           </div>
 
@@ -107,11 +106,11 @@ const Footer: React.FC = () => {
           <div className="space-y-8">
             <h3 className="text-white font-black mb-2 text-xl border-b-2 border-brand-coral/30 pb-2 inline-block italic">تواصل معنا</h3>
             <div className="space-y-5">
-              <a href="mailto:hello@englishers.club" className="flex items-center space-x-4 space-x-reverse group">
+              <a href="mailto:englishers.co@gmail.com" className="flex items-center space-x-4 space-x-reverse group">
                 <div className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-brand-coral group-hover:bg-brand-coral group-hover:text-white transition-all">
                   <Mail size={18} />
                 </div>
-                <span className="text-sm font-bold group-hover:text-white transition-colors">hello@englishers.club</span>
+                <span className="text-sm font-bold group-hover:text-white transition-colors">englishers.co@gmail.com</span>
               </a>
               
               <a href="tel:07750007476" className="flex items-center space-x-4 space-x-reverse group">
@@ -134,7 +133,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-24 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-center items-center gap-6">
+        <div className="mt-16 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-center items-center gap-4">
           <p className="text-xs text-slate-500 font-bold">© {new Date().getFullYear()} إنجلشرز. جميع الحقوق محفوظة.</p>
           <div className="flex space-x-6 space-x-reverse text-[10px] font-black uppercase tracking-widest text-slate-600">
           </div>
